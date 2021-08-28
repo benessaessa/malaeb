@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Malaaeb</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar editNavbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="imageLogo" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse pt-xl-0 pt-4" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle ps-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/bahrain.png" class="ps-2"> Bahrain
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"><img src="images/bahrain.png"> English</a></li>
+                <li><a class="dropdown-item" href="#"><img src="images/bahrain.png"> French</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item me-lg-5">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-lg-5">
+              <a class="nav-link" href="">Stadiums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="matches-list.html">Matches</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link textGreen" href="#">For Stadiums Owners</a>
+            </li>
+            <li class="nav-item">
+              <span class="badge badgeLanguage">اللغة العربية</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Find Best Stadiums -->
+  <div class="sectionFirst">
+    <div class="overlay">
+      <div class="container pt-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h1 class="text-white fw-bold pt-5">Find best stadiums to score in!</h1>
+            <p class="text-white pb-4">Find football fields near you in Bahrain 🇧🇭🇭</p>
+            <form>
+              <div class="d-sm-flex justify-content-center">
+                <div class="d-sm-flex bg-white findForm mb-4">
+                  <div class="me-lg-2 px-lg-3">
+                    <select class="form-select border-0" aria-label="Default select example">
+                      <option selected>Select Your City</option>
+                      <option value="cairo">Cairo</option>
+                      <option value="alex">Alex</option>
+                      <option value="giza">Giza</option>
+                    </select>
+                  </div>
+                  <div class="me-lg-2 px-lg-3 border-start">
+                    <select class="form-select border-0" aria-label="Default select example">
+                      <option selected>Select Your Area</option>
+                      <option value="minia">Minia</option>
+                      <option value="mallawi">Mallawi</option>
+                      <option value="dayo">Dayo</option>
+                    </select>
+                  </div>
+                  <div>
+                    <button class="btn btnFind mt-1 mb-1">Find</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <p class="pt-5 text-white">Or explore Malaeb</p>
+            <img src="images/arrow.png" class="img-fluid mx-auto mb-5" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Related Stadiums -->
+  <div class="topStaduims pb-4">
+    <div class="container pt-5">
+      <h3 class="text-center"><img class="me-2" src="images/point.png" alt="">TOP RATED  <span class="border-bottom">STADIUMS</span> <img class="ms-2" src="images/point.png" alt=""></h3>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card cardSwipper">
+              <img src="images/stad1.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5>VISCA Stadium <span class="float-end stars"><i class="fa fa-star"></i> 4.9</span></h5>
+                <p>Muharrap, Isa Town</p>
+                <h6>4 Pitches sizes</h6>
+                <button class="btn btnBook w-100">Book from <span class="textG">3.5 BHD</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card cardSwipper">
+              <img src="images/stad2.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5>VISCA Stadium <span class="float-end stars"><i class="fa fa-star"></i> 4.9</span></h5>
+                <p>Muharrap, Isa Town</p>
+                <h6>4 Pitches sizes</h6>
+                <button class="btn btnBook w-100">Book from <span class="textG">3.5 BHD</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card cardSwipper">
+              <img src="images/stad3.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5>VISCA Stadium <span class="float-end stars"><i class="fa fa-star"></i> 4.9</span></h5>
+                <p>Muharrap, Isa Town</p>
+                <h6>4 Pitches sizes</h6>
+                <button class="btn btnBook w-100">Book from <span class="textG">3.5 BHD</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card cardSwipper">
+              <img src="images/stad1.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5>VISCA Stadium <span class="float-end stars"><i class="fa fa-star"></i> 4.9</span></h5>
+                <p>Muharrap, Isa Town</p>
+                <h6>4 Pitches sizes</h6>
+                <button class="btn btnBook w-100">Book from <span class="textG">3.5 BHD</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card cardSwipper">
+              <img src="images/stad1.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5>VISCA Stadium <span class="float-end stars"><i class="fa fa-star"></i> 4.9</span></h5>
+                <p>Muharrap, Isa Town</p>
+                <h6>4 Pitches sizes</h6>
+                <button class="btn btnBook w-100">Book from <span class="textG">3.5 BHD</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"><img src="images/Rightcircle.png" alt=""></div>
+        <div class="swiper-button-prev"><img src="images/Leftcircle.png" alt=""></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <!-- Nearby Areas -->
+    <h3 class="text-center"><img class="me-2" src="images/point.png" alt="">NEARBY <span class="border-bottom">AREAS</span> <img class="ms-2" src="images/point.png" alt=""></h3>
+    <div class="row pt-5">
+      <div class="col-lg-3 col-md-4 col-6 mb-3">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="images/manama.png" class="imgMedia" alt="...">
+          </div>
+          <div class="flex-grow-1 ms-3 pt-lg-4 pt-md-4 pt-sm-3 pt-1">
+            <h6 class="fw-bold pt-1">Manama</h6>
+            <p class="textVsmall">12 Stadiums</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6 mb-3">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="images/play.png" class="imgMedia" alt="...">
+          </div>
+          <div class="flex-grow-1 ms-3 pt-lg-4 pt-md-4 pt-sm-3 pt-1">
+            <h6 class="fw-bold pt-1">Isa Town</h6>
+            <p class="textVsmall">5 Stadiums</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6 mb-3">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="images/playground.png" class="imgMedia" alt="...">
+          </div>
+          <div class="flex-grow-1 ms-3 pt-lg-4 pt-md-4 pt-sm-3 pt-1">
+            <h6 class="fw-bold pt-1">Saar</h6>
+            <p class="textVsmall">8 Stadiums</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6 mb-3">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="images/playground2.png" class="imgMedia" alt="...">
+          </div>
+          <div class="flex-grow-1 ms-3 pt-lg-4 pt-md-4 pt-sm-3 pt-1">
+            <h6 class="fw-bold pt-1">Riffa</h6>
+            <p class="textVsmall">8 Stadiums</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6 mb-3">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="images/playground3.png" class="imgMedia" alt="...">
+          </div>
+          <div class="flex-grow-1 ms-3 pt-lg-4 pt-md-4 pt-sm-3 pt-1">
+            <h6 class="fw-bold pt-1">Hamala</h6>
+            <p class="textVsmall">4 Stadiums</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6 mb-3">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="images/playground4.png" class="imgMedia" alt="...">
+          </div>
+          <div class="flex-grow-1 ms-3 pt-lg-4 pt-md-4 pt-sm-3 pt-1">
+            <h6 class="fw-bold pt-1">Buri</h6>
+            <p class="textVsmall">8 Stadiums</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6 mb-3">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="images/playground5.png" class="imgMedia" alt="...">
+          </div>
+          <div class="flex-grow-1 ms-3 pt-lg-4 pt-md-4 pt-sm-3 pt-1">
+            <h6 class="fw-bold pt-1">Sanad</h6>
+            <p class="textVsmall">6 Stadiums</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6 mb-3">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="images/playground6.png" class="imgMedia" alt="...">
+          </div>
+          <div class="flex-grow-1 ms-3 pt-lg-4 pt-md-4 pt-sm-3 pt-1">
+            <h6 class="fw-bold pt-1">Adhari</h6>
+            <p class="textVsmall">7 Stadiums</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Start Organizing Your Games -->
+    <div class="jumbo">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <img src="images/iphone.png" class="imgAbsolute" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8 text-center">
+          <h1 class="fw-bold textLg pt-md-5 pb-md-5 pt-5"><img src="images/linesLeft.png" class="me-3" alt="">
+            Start Organizing Your Games <img src="images/linesRight.png" class="ms-3" alt="">
+          </h1>
+          <p>Download the App Now</p>
+          <p class="text-center pb-4">
+            <a href="#"><img src="images/googleplay.png" class="me-2 imgSocial" alt=""></a>
+            <a href="#"><img src="images/appstore.png" class="imgSocial" alt=""></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BROWSE STADIUMS BY SIZE -->
+    <div>
+      <h3 class="text-center"><img class="me-2" src="images/point.png" alt="">BROWSE <span class="border-bottom">STADIUMS</span> BY SIZE<img class="ms-2" src="images/point.png" alt=""></h3>
+      <div class="row pt-5">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="card cardPlayground">
+            <div class="card-body text-lg-center text-md-center">
+              <img src="images/Pitchicon.png" class="mx-sm-auto mx-lg-auto d-block pt-lg-3" alt="">
+              <div>
+                <h4 class="pt-2 ps-2">5 v 5</h4>
+                <p class="ps-2">Up to 10 players</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="card cardPlayground">
+            <div class="card-body text-lg-center text-md-center">
+              <img src="images/Pitchicon.png" class="mx-sm-auto mx-lg-auto d-block pt-lg-3" alt="">
+              <div>
+                <h4 class="pt-2 ps-2">5 v 5</h4>
+                <p class="ps-2">Up to 10 players</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="card cardPlayground">
+            <div class="card-body text-lg-center text-md-center">
+              <img src="images/Pitchicon.png" class="mx-sm-auto mx-lg-auto d-block pt-lg-3" alt="">
+              <div>
+                <h4 class="pt-2 ps-2">5 v 5</h4>
+                <p class="ps-2">Up to 10 players</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="card cardPlayground">
+            <div class="card-body text-lg-center text-md-center">
+              <img src="images/Pitchicon.png" class="mx-sm-auto mx-lg-auto d-block pt-lg-3" alt="">
+              <div>
+                <h4 class="pt-2 ps-2">5 v 5</h4>
+                <p class="ps-2">Up to 10 players</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ready To Accept -->
+    <div class="score mt-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-5">
+          <div class="p-lg-4 pt-md-4 pt-sm-4 pt-4">
+            <img src="images/soccer.png" class="img-fluid ms-3 ms-lg-4 ms-md-2" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-7">
+          <h1 class="pt-lg-5 pt-md-4 pt-sm-5 pt-5 textlarge fw-bold">Ready To Accept <br>
+            New <span class="textG">Challenges</span> ?
+          </h1>
+          <img src="images/Page.png" class="ms-auto d-block img-fluid" alt="">
+        </div>
+        <div class="col-lg-5 col-md-5">
+          <div class="pt-4 paddingTop">
+            <p class="fw-bold">In Malaeb we have</p>
+            <p><span class="textG fw-bold pe-2">+1440</span>Registered Stadiums 🏟 </p>
+            <p><span class="textG fw-bold pe-2">+29K</span>Joined Players ⚽️</p>
+            <p><span class="textG fw-bold pe-2">+10K</span>Match Created 🏆</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book your Game -->
+    <div class="pt-5">
+      <h3 class="text-center"><img class="me-2" src="images/point.png" alt="">
+        <span class="border-bottom">BOOK</span> YOUR GAME WITHIN MINUTES <img class="ms-2" src="images/point.png" alt="">
+      </h3>
+      <div class="row justify-content-around pt-5">
+        <div class="col-lg-3 col-md-3 sm-6 text-md-center text-lg-center mb-3">
+          <div class="d-md-block d-flex">
+            <div class="bgImage">
+              <img src="images/Position.png" class="img-fluid mx-auto d-block imageFixedHeight" alt="">
+            </div>
+            <div>
+              <h2 class="pt-3 pt-lg-2">Find</h2>
+              <p class="textSmall">A nearby Stadium</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 sm-6 text-md-center text-lg-center mb-3">
+          <div class="d-md-block d-flex">
+            <div class="bgImage">
+              <img src="images/calendar.png" class="img-fluid mx-auto d-block imageFixedHeight" alt="">
+            </div>
+            <div>
+              <h2 class="pt-3 pt-lg-2">Select</h2>
+              <p class="textSmall">Date, time, duration and pitch size</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 sm-6 text-md-center text-lg-center mb-3">
+          <div class="d-md-block d-flex">
+            <div class="bgImage">
+              <img src="images/Creditcard.png" class="img-fluid mx-auto d-block imageFixedHeight" alt="">
+            </div>
+            <div>
+              <h2 class="pt-3 pt-lg-2">Pay</h2>
+              <p class="textSmall">The booking amount online</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Footer -->
+  <div class="footer p-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <img src="images/malaeb.png" class="img-fluid mx-auto d-block" alt="">
+          <p class="text-center">Download the App Now</p>
+          <p class="text-center">
+            <a href="#"><img src="images/googleplay.png" class="me-2 imgSocial" alt=""></a>
+            <a href="#"><img src="images/appstore.png" class="imgSocial" alt=""></a>
+          </p>
+          <p class="text-center pt-3">
+            <a href="#"><img src="images/facebook.png" class="me-3" alt=""></a>
+            <a href="#"><img src="images/twitter.png" class="me-3" alt=""></a>
+            <a href="#"><img src="images/instagram.png" alt=""></a>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 ps-lg-5 willHide">
+          <h6 class="pt-4">About Malaeb</h6>
+          <p><a href="#">About Us</a></p>
+          <p><a href="#">Terms and Condition</a></p>
+          <p><a href="#">How it works</a></p>
+          <p><a href="#">Careers</a></p>
+          <p><a href="#">Contact Us</a></p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 willHide">
+          <h6 class="pt-4">Malaeb For players</h6>
+          <p><a href="#">Stadiums List</a></p>
+          <p><a href="#">Matches List</a></p>
+          <p><a href="#">FAQs</a></p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 willHide">
+          <h6 class="pt-4">Malaeb For Stadium owners</h6>
+          <p><a href="#">Join as an owner</a></p>
+          <p><a href="#">Terms and Condition</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/file.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+@font-face{
+    src: url(../webfonts/TisaSansPro-Regular.ttf);
+    font-family: tisa;
+}
+@font-face{
+    src: url(../webfonts/Cairo-Regular.ttf);
+    font-family: cairo;
+}
+body{
+    font-family: tisa;
+}
+.editNavbar .dropdown{
+    border: 1px solid #e3e2e2;
+    border-radius: 8px;
+    min-width: 10rem;
+}
+.editNavbar .nav-item .nav-link{
+    color: black;
+    font-weight: 400;
+}
+.editNavbar .nav-item .textGreen{
+    color: #85C240;
+}
+.textG{
+    color: #85C240;
+}
+.editNavbar .nav-item .nav-link.active{
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;
+    color: #85C240;
+    border-radius: 8px;
+}
+.editNavbar .dropdown-toggle::after{
+    /* display: inline-block; */
+    margin-left: 0.255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    float: right;
+    border-left: .3em solid transparent;
+}
+.badgeLanguage{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;
+    border: 1px solid #e3e2e2;
+    border-radius: 8px;
+    color: #85C240;
+    padding:0.75rem;
+    font-family: cairo;
+    height: 40px;
+}
+/* ========================== */
+.sectionFirst {
+    background: url(../images/bgImage.png);
+    background-position: center;
+    min-height: 20rem;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.sectionFirst .overlay{
+    background-color: rgb(0 0 0 / 48%);
+    min-height: 20rem;
+}
+.btnFind{
+    background-color: #85C240;
+    width: 153px;
+    text-transform: uppercase;
+    color: white;
+    height: 46px;
+    border-radius: 8px;
+}
+.btnFind:hover{
+    background-color: #6e9e36;
+    color: white;
+}
+.findForm{
+    padding: 0.2rem 0.1rem 0.2rem 0.5rem;
+    border-radius: 8px;
+}
+.findForm .form-select{
+    height: 50px;
+}
+@media screen and (max-width:575px){
+    .btnFind{
+        width: 100%;
+    }
+}
+/* =========================== */
+.bgImage{
+    background: url(../images/bg.png);
+    object-fit: cover;
+    width: 112px;
+    height: 112px;
+    position: relative;
+    margin: auto;
+}
+.imageFixedHeight{
+    align-self: center;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.textSmall{
+    color: #909192;
+    font-size: 16px;
+}
+.textVsmall{
+    font-size: 13px;
+}
+.imgMedia{
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width:500px){
+    .imgMedia{
+        width: 60px;
+        height: 60px;
+    }
+}
+.jumbo{
+    margin-top: 14rem;
+    margin-bottom: 10rem;
+    background: linear-gradient(85.42deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #41AD49;
+    min-height: 235px;
+}
+.imgAbsolute{
+    position: absolute;
+    margin-top: -7rem;
+}
+.score{
+    background: linear-gradient(85.42deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #41AD49;
+}
+/* ================================================= */
+.footer{
+    background-color: #f7f6f6;
+}
+.footer .imgSocial{
+    width: 120px;
+    height: 40px;
+}
+.footer h6{
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.footer p a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.cardPlayground{
+    /* White/Default */
+
+    background: #FFFFFF;
+    /* Elevation - 3 */
+
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+}
+/* =============================== */
+.swiper-container {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    height: 480px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-pagination{
+    bottom: 0px !important;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 205px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+/* .topStaduims .swiper-button-prev img{
+    position: absolute;
+    z-index: 99995 !important;
+    right: 51px;
+}
+.topStaduims .swiper-button-next img{
+    position: absolute;
+    z-index: 99995 !important;
+    left: 51px;
+} */
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{
+    content: "";
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+    content: "";
+}
+.cardSwipper{
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+}
+.cardSwipper h5{
+    font-weight: bold;
+    font-size: 20px;
+}
+.cardSwipper p{
+    font-size: 16px;
+}
+.stars{
+    color: #F0803C;
+}
+.btnBook{
+    background-color: #eeeff0;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+/* ============================== */
+.cardList{
+    border-radius: 20px;
+}
+.cardList .card-img-top{
+    height: 190px;
+    width: 100%; 
+    border-radius:20px 0px 0px 20px;
+    object-fit: cover;
+}
+.btnFilter{
+    color: #41AD49;
+    background-color: #edeeef;
+}
+/* ============================== */
+@media screen and (max-width:767px){
+    .cardPlayground .card-body{
+        display: flex;
+    }
+    .imgAbsolute{
+        display: none;
+        position: relative;
+        margin-top: 4rem;
+        margin-right: auto;
+        margin-left: auto;
+        /* display: block; */
+    }
+    .jumbo{
+        margin-top: 4rem;
+    }
+    .textLg{
+        font-size: 22px;
+    }
+    .bgImage{
+        margin: unset;
+        margin-right: 1rem;
+    }
+    .willHide{
+        display: none;
+    }
+    .cardList .card-img-top{
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+@media screen and (max-width:992px){
+    .paddingTop{
+        text-align: center;
+    }
+}
+@media screen and (max-width:400px){
+    .textlarge{
+        font-size: 24px;
+    }
+}

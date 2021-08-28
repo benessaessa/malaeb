@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Malaaeb</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar editNavbar navbar-expand-lg navbar-light border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="imageLogo" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse pt-xl-0 pt-4" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle ps-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/bahrain.png" class="ps-2"> Bahrain
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"><img src="images/bahrain.png"> English</a></li>
+                <li><a class="dropdown-item" href="#"><img src="images/bahrain.png"> French</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item me-lg-5">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-lg-5">
+              <a class="nav-link" href="">Stadiums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="matches-list.html">Matches</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link textGreen" href="#">For Stadiums Owners</a>
+            </li>
+            <li class="nav-item">
+              <span class="badge badgeLanguage">اللغة العربية</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Find Best Stadiums -->
+  <div class="sectionFirst d-none d-md-block">
+    <div class="overlay">
+      <div class="container pt-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h1 class="text-white fw-bold pt-5">Find Malaeb In</h1>
+            <form>
+              <div class="d-sm-flex justify-content-center">
+                <div class="d-sm-flex bg-white findForm mb-4">
+                  <div class="me-lg-2 px-lg-3">
+                    <input type="text" class="form-control mt-2 border-0" placeholder="Search with stadium name..." name="" id="">
+                  </div>
+                  <div class="me-lg-2 px-lg-3">
+                    <select class="form-select border-0" aria-label="Default select example">
+                      <option selected>Select Your City</option>
+                      <option value="cairo">Cairo</option>
+                      <option value="alex">Alex</option>
+                      <option value="giza">Giza</option>
+                    </select>
+                  </div>
+                  <div class="me-lg-2 px-lg-3 border-start">
+                    <select class="form-select border-0" aria-label="Default select example">
+                      <option selected>Select Your Area</option>
+                      <option value="minia">Minia</option>
+                      <option value="mallawi">Mallawi</option>
+                      <option value="dayo">Dayo</option>
+                    </select>
+                  </div>
+                  <div>
+                    <button class="btn btnFind mt-1 mb-1">Find</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <img src="images/arrow.png" class="img-fluid mx-auto mb-5" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Related Stadiums -->
+  <div class="topStaduims pb-4">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-5">
+          <div class="d-md-none d-block pb-4">
+            <h1 class="fw-bold">Stadiums 
+              <button class="btn btnFilter ms-auto float-end" data-bs-toggle="modal" data-bs-target="#modalFilter">
+                <img src="images/Settings.png" alt=""> Filter
+              </button></h1>
+          </div>
+          <form action="#" class="d-none d-md-block">
+            <h3 class="text-center"><img class="me-2" src="images/point.png" alt=""><span class="border-bottom">FILTER BY</span> <img class="ms-2" src="images/point.png" alt=""></h3>
+            <p class="pt-4 mb-0">Date</p>
+            <div id="datepicker"></div>
+            <p class="pt-2 mb-1 fw-bold">Time</p>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="from">From</label>
+                  <input id="from" class="form-control" type="time" name="">
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="to">To</label>
+                  <input id="to" class="form-control" type="time" name="">
+                </div>
+              </div>
+            </div>
+            <p class="pt-3 mb-0">Pitch Size</p>
+            <div class="row">
+              <div class="col-4 mt-3">
+                <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                <label class="btn btn-outline-success w-100" for="success-outlined">5 V 5</label>
+              </div>
+              <div class="col-4 mt-3">
+                <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined2" autocomplete="off">
+                <label class="btn btn-outline-success w-100" for="success-outlined2">6 V 6</label>
+              </div>
+              <div class="col-4 mt-3">
+                <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined3" autocomplete="off">
+                <label class="btn btn-outline-success w-100" for="success-outlined3">7 V 7</label>
+              </div>
+              <div class="col-4 mt-3">
+                <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined4" autocomplete="off">
+                <label class="btn btn-outline-success w-100" for="success-outlined4">8 V 8</label>
+              </div>
+              <div class="col-4 mt-3">
+                <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined5" autocomplete="off">
+                <label class="btn btn-outline-success w-100" for="success-outlined5">9 V 9</label>
+              </div>
+              <div class="col-4 mt-3">
+                <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined6" autocomplete="off">
+                <label class="btn btn-outline-success w-100" for="success-outlined6">11 V 11</label>
+              </div>
+            </div>
+            <p class="pt-4">Stadium Rate</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="stars1" checked>
+              <label class="form-check-label" for="stars1">
+                4 stars and above
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="stars2">
+              <label class="form-check-label" for="stars2">
+                3 stars
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="stars3">
+              <label class="form-check-label" for="stars3">
+                2 stars
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="stars4">
+              <label class="form-check-label" for="stars4">
+                1 star
+              </label>
+            </div>
+            <p class="pt-4">Available Facilities</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="shower" checked>
+              <label class="form-check-label" for="shower">
+                Shower
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="bibs">
+              <label class="form-check-label" for="bibs">
+                Bibs
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="toilets">
+              <label class="form-check-label" for="toilets">
+                Toilets
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="water">
+              <label class="form-check-label" for="water">
+                Water
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-8 col-md-7">
+          <div class="card mb-3 cardList">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/stad1.png" class="card-img-top" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5>VISCA Stadium <span class="float-end stars"><i class="fa fa-star"></i> 4.9</span></h5>
+                  <p>Muharrap, Isa Town</p>
+                  <h6>4 Pitches sizes <span class="badge text-dark border">5 v 5</span></h6>
+                  <button class="btn btnBook w-100">Book from <span class="textG">3.5 BHD</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 cardList">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/stad2.png" class="card-img-top" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/stad1.png" class="card-img-top" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/stad3.png" class="card-img-top" alt="">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5>VISCA Stadium <span class="float-end stars"><i class="fa fa-star"></i> 4.9</span></h5>
+                  <p>Muharrap, Isa Town</p>
+                  <h6>4 Pitches sizes <span class="badge text-dark border">5 v 5</span></h6>
+                  <button class="btn btnBook w-100">Book from <span class="textG">3.5 BHD</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 cardList">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/stad3.png" class="card-img-top" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5>VISCA Stadium <span class="float-end stars"><i class="fa fa-star"></i> 4.9</span></h5>
+                  <p>Muharrap, Isa Town</p>
+                  <h6>4 Pitches sizes <span class="badge text-dark border">5 v 5</span></h6>
+                  <button class="btn btnBook w-100">Book from <span class="textG">3.5 BHD</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 cardList">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/stad1.png" class="card-img-top" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5>VISCA Stadium <span class="float-end stars"><i class="fa fa-star"></i> 4.9</span></h5>
+                  <p>Muharrap, Isa Town</p>
+                  <h6>4 Pitches sizes <span class="badge text-dark border">5 v 5</span></h6>
+                  <button class="btn btnBook w-100">Book from <span class="textG">3.5 BHD</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="modalFilter" tabindex="-1" aria-labelledby="modalFilter" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalFilter">Filter</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="form-group mb-2">
+                  <label for="date">Date</label>
+                  <input id="date" class="form-control" type="date" name="">
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="from">From</label>
+                      <input id="from" class="form-control" type="time" name="">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="to">To</label>
+                      <input id="to" class="form-control" type="time" name="">
+                    </div>
+                  </div>
+                </div>
+                <p class="pt-3 mb-0">Pitch Size</p>
+                <div class="row">
+                  <div class="col-4 mt-3">
+                    <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success w-100" for="success-outlined">5 V 5</label>
+                  </div>
+                  <div class="col-4 mt-3">
+                    <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined2" autocomplete="off">
+                    <label class="btn btn-outline-success w-100" for="success-outlined2">6 V 6</label>
+                  </div>
+                  <div class="col-4 mt-3">
+                    <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined3" autocomplete="off">
+                    <label class="btn btn-outline-success w-100" for="success-outlined3">7 V 7</label>
+                  </div>
+                  <div class="col-4 mt-3">
+                    <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined4" autocomplete="off">
+                    <label class="btn btn-outline-success w-100" for="success-outlined4">8 V 8</label>
+                  </div>
+                  <div class="col-4 mt-3">
+                    <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined5" autocomplete="off">
+                    <label class="btn btn-outline-success w-100" for="success-outlined5">9 V 9</label>
+                  </div>
+                  <div class="col-4 mt-3">
+                    <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined6" autocomplete="off">
+                    <label class="btn btn-outline-success w-100" for="success-outlined6">11 V 11</label>
+                  </div>
+                </div>
+                <p class="pt-4">Stadium Rate</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="stars1" checked>
+                  <label class="form-check-label" for="stars1">
+                    4 stars and above
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="stars2">
+                  <label class="form-check-label" for="stars2">
+                    3 stars
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="stars3">
+                  <label class="form-check-label" for="stars3">
+                    2 stars
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="stars4">
+                  <label class="form-check-label" for="stars4">
+                    1 star
+                  </label>
+                </div>
+                <p class="pt-4">Available Facilities</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="shower" checked>
+                  <label class="form-check-label" for="shower">
+                    Shower
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="bibs">
+                  <label class="form-check-label" for="bibs">
+                    Bibs
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="toilets">
+                  <label class="form-check-label" for="toilets">
+                    Toilets
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="water">
+                  <label class="form-check-label" for="water">
+                    Water
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer p-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <img src="images/malaeb.png" class="img-fluid mx-auto d-block" alt="">
+          <p class="text-center">Download the App Now</p>
+          <p class="text-center">
+            <a href="#"><img src="images/googleplay.png" class="me-2 imgSocial" alt=""></a>
+            <a href="#"><img src="images/appstore.png" class="imgSocial" alt=""></a>
+          </p>
+          <p class="text-center pt-3">
+            <a href="#"><img src="images/facebook.png" class="me-3" alt=""></a>
+            <a href="#"><img src="images/twitter.png" class="me-3" alt=""></a>
+            <a href="#"><img src="images/instagram.png" alt=""></a>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 ps-lg-5 willHide">
+          <h6 class="pt-4">About Malaeb</h6>
+          <p><a href="#">About Us</a></p>
+          <p><a href="#">Terms and Condition</a></p>
+          <p><a href="#">How it works</a></p>
+          <p><a href="#">Careers</a></p>
+          <p><a href="#">Contact Us</a></p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 willHide">
+          <h6 class="pt-4">Malaeb For players</h6>
+          <p><a href="#">Stadiums List</a></p>
+          <p><a href="#">Matches List</a></p>
+          <p><a href="#">FAQs</a></p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 willHide">
+          <h6 class="pt-4">Malaeb For Stadium owners</h6>
+          <p><a href="#">Join as an owner</a></p>
+          <p><a href="#">Terms and Condition</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/file.js"></script>
+</body>
+
+</html>
