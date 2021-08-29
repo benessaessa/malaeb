@@ -1,6 +1,6 @@
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 60,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -9,9 +9,9 @@ var swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
     },
-    autoplay: {
-        delay: 3000,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    // },
     breakpoints: {
         300: {
             slidesPerView: 1,
@@ -29,6 +29,10 @@ var swiper = new Swiper('.swiper-container', {
           slidesPerView: 3,
           spaceBetween: 50,
         },
+        1500: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        }
     }
 });
 $(function() {
