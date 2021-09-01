@@ -27,6 +27,10 @@ body{
 .textG{
     color: #85C240;
 }
+.imgPosition{
+    width: 30px;
+    height: 30px;
+}
 .editNavbar .nav-item .nav-link.active{
     background:linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;
     color: #85C240;
@@ -88,6 +92,14 @@ body{
 .findForm .form-select{
     height: 50px;
 }
+.imgSportCard{
+    width: 25px;
+    margin-right: 0.5rem;
+}
+.fontLg{
+    font-size: 29px;
+    line-height: 25px;
+}
 @media screen and (max-width:575px){
     .btnFind{
         width: 100%;
@@ -144,6 +156,21 @@ body{
 }
 .score{
     background: linear-gradient(85.42deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #41AD49;
+}
+.bgImg{
+    margin-top: -1rem;
+}
+.facilities{
+    border: 1px solid #C2C9D1;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    min-width: 140px;
+}
+.imgPich{
+    width: 58px;
+    height: 40px;
+    object-fit: cover;
 }
 /* ================================================= */
 .footer{
@@ -211,6 +238,12 @@ body{
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
+.sliderStad img{
+    height: 370px;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
 .topStaduims .swiper-button-prev img{
     position: absolute;
     z-index: 99995 !important;
@@ -260,6 +293,25 @@ body{
     color: #41AD49;
     background-color: #edeeef;
 }
+/* ============================= */
+.imgCircle{
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.txtLarge{
+    font-size: 26px;
+}
+.available{
+    border: 1px solid #C2C9D1;
+    padding: 0.5rem 0.5rem 0.2rem .5rem;
+    border-radius: 8px;
+}
+.navFootball .nav-item .nav-link.active{
+    background: rgba(135, 190, 68, 0.1);
+    color: #87BE44;
+}
 /* ============================== */
 @media screen and (max-width:767px){
     .cardPlayground .card-body{
@@ -275,6 +327,7 @@ body{
     }
     .jumbo{
         margin-top: 4rem;
+        margin-bottom: 4rem
     }
     .textLg{
         font-size: 18px;

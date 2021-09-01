@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Enter your description here" />
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -74,11 +74,15 @@
                 <div class="d-sm-flex bg-white findForm mb-4">
                   <div class="dropSport text-start">
                     <a class="nav-link dropdown-toggle ps-2 w-100" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="images/football.png" class="ps-2"> <span class="text-dark">Football</span>
+                      <img src="images/football.png" class="ps-2"> <span class="text-dark d-inline d-sm-none">Football</span>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#"><img src="images/basket.png">Basket Ball</a></li>
-                      <li><a class="dropdown-item" href="#"><img src="images/volyball.png">Volley Ball </a></li>
+                      <li><a class="dropdown-item" href="#"><img src="images/basket.png">
+                        <span class="text-dark d-inline d-sm-none">Basket Ball</span></a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"><img src="images/volyball.png">
+                        <span class="text-dark d-inline d-sm-none">Volley Ball </span></a>
+                      </li>
                     </ul>
                   </div>
                   <div class="me-lg-2 px-lg-3">
@@ -98,7 +102,11 @@
                     </select>
                   </div>
                   <div>
-                    <button class="btn btnFind mt-1 mb-1">Find</button>
+                    <a href="#" class="btn bg-white textG border-0 mt-1 mb-1 d-block d-sm-none text-start">
+                      <img src="images/Position.png" class="imgPosition" alt=""> Detect My Location
+                    </a>
+                    <button class="btn btnFind mt-1 mb-1 d-none d-sm-block">Find</button>
+                    <button class="btn btnFind mt-1 mb-1 d-block d-sm-none">Find Stadiums</button>
                   </div>
                 </div>
               </div>
@@ -181,7 +189,7 @@
     </div>
   </div>
 
-  <div class="container py-5">
+  <div class="container pt-5">
     <!-- Nearby Areas -->
     <h3 class="text-center"><img class="me-2" src="images/point.png" alt="">NEARBY <span class="border-bottom">AREAS</span> <img class="ms-2" src="images/point.png" alt=""></h3>
     <div class="row pt-5">
@@ -444,7 +452,7 @@
               <img src="images/Position.png" class="img-fluid mx-auto d-block imageFixedHeight" alt="">
             </div>
             <div>
-              <h3 class="fw-bold pt-3 pt-lg-3">Find</h3>
+              <h3 class="fw-bold pt-4 pt-lg-3">Find</h3>
               <p class="textSmall">A nearby Stadium</p>
             </div>
           </div>
@@ -455,7 +463,7 @@
               <img src="images/calendar.png" class="img-fluid mx-auto d-block imageFixedHeight" alt="">
             </div>
             <div>
-              <h3 class="fw-bold pt-3 pt-lg-3">Select</h3>
+              <h3 class="fw-bold pt-4 pt-lg-3">Select</h3>
               <p class="textSmall">Date, time, duration and pitch size</p>
             </div>
           </div>
@@ -466,7 +474,7 @@
               <img src="images/Creditcard.png" class="img-fluid mx-auto d-block imageFixedHeight" alt="">
             </div>
             <div>
-              <h3 class="fw-bold pt-3 pt-lg-3">Pay</h3>
+              <h3 class="fw-bold pt-4 pt-lg-3">Pay</h3>
               <p class="textSmall">The booking amount online</p>
             </div>
           </div>
