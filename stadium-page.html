@@ -68,13 +68,27 @@
     <div class="container pt-5">
       <div class="row">
         <div class="col-lg-8 col-md-7">
+          <h3 class="pb-2">VISCA Stadium</h3>
+          <p><img src="images/star.png" alt="">
+            <span class="stars fw-bold">4.9</span> (41 reviews) 
+            <span class="ps-lg-5"><img src="images/Combined.png" alt=""> Muharrap, Isa Town</span>
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-5">
+          <div class="d-none pb-4 d-md-block">
+            <button class="btn btnFilter ms-auto float-end" data-bs-toggle="modal" data-bs-target="#modalFilter">
+              <img src="images/share.png" alt=""> Share
+            </button>
+            <button class="btn btnFilter ms-auto float-end me-2" data-bs-toggle="modal" data-bs-target="#modalFilter">
+              <img src="images/heart.png" alt=""> save
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-7 mb-3">
           <!-- Intro Stad -->
           <div class="introStad">
-            <h3 class="pb-2">VISCA Stadium</h3>
-            <p><img src="images/star.png" alt="">
-              <span class="stars fw-bold">4.9</span> (41 reviews) 
-              <span class="ps-lg-5"><img src="images/Combined.png" alt=""> Muharrap, Isa Town</span>
-            </p>
             <div class="d-flex pt-4">
               <div class="flex-shrink-0">
                 <img src="images/tag.png" alt="...">
@@ -83,12 +97,16 @@
                 <h5 class="fw-bold">VISCA Stadium</h5>
                 <p class="textVsmall">On Malaeb since Oct 2019</p>
               </div>
-              <div>
-                <p>
+              <div class="d-none d-md-block">
+                <a href="#" class="text-decoration-none">
                   <img src="images/facedark.png" class="me-2" alt="">
+                </a>
+                <a href="#" class="text-decoration-none">
                   <img src="images/twitterdark.png" class="me-2" alt="">
+                </a>
+                <a href="#" class="text-decoration-none">
                   <img src="images/instagramdark.png" alt="">
-                </p>
+                </a>
               </div>
             </div>
             <p class="pt-2">The venue is surrounded by floodlights which makes this facility perfect all year around. The venue is surrounded by floodlights which makes this facility perfect all year around. The venue is surrounded by floodlights which makes this facility perfect all year around.</p>
@@ -119,6 +137,15 @@
           <!-- Stadium Location -->
           <h5 class="mb-0 pt-4 pb-0">Stadium Location</h5>
           <img src="images/bgLarge.png" class="bgImg" alt="">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" 
+                marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=cairo&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+              </iframe>
+              <a href="https://www.fridaynightfunkin.net/friday-night-funkin-mods-fnf-play-online/">FNF Online</a>
+            </div>
+          </div>
+
           <!-- Available Pitches -->
           <h5 class="mb-0 pt-4 pb-0">Available Pitches</h5>
           <img src="images/bgLarge.png" class="bgImg" alt="">
@@ -141,7 +168,7 @@
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-football" role="tabpanel" aria-labelledby="pills-football-tab">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                   <div class="d-flex available">
                     <div class="flex-shrink-0">
                       <img src="images/pitch.png" class="img-fluid" alt="...">
@@ -152,7 +179,40 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
+                  <div class="d-flex available">
+                    <div class="flex-shrink-0">
+                      <img src="images/pitch.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <h6 class="fw-bold mb-1 pt-2">Pitch No. (1) - Euro</h6>
+                      <p class="textVsmall"><span class="textG">5 v 5</span> From BHD 35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                  <div class="d-flex available">
+                    <div class="flex-shrink-0">
+                      <img src="images/pitch.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <h6 class="fw-bold mb-1 pt-2">Pitch No. (1) - Euro</h6>
+                      <p class="textVsmall"><span class="textG">5 v 5</span> From BHD 35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                  <div class="d-flex available">
+                    <div class="flex-shrink-0">
+                      <img src="images/pitch.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <h6 class="fw-bold mb-1 pt-2">Pitch No. (1) - Euro</h6>
+                      <p class="textVsmall"><span class="textG">5 v 5</span> From BHD 35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-2">
                   <div class="d-flex available">
                     <div class="flex-shrink-0">
                       <img src="images/pitch.png" class="img-fluid" alt="...">
@@ -167,7 +227,7 @@
             </div>
             <div class="tab-pane fade" id="pills-basket" role="tabpanel" aria-labelledby="pills-basket-tab">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                   <div class="d-flex available">
                     <div class="flex-shrink-0">
                       <img src="images/pitch.png" class="img-fluid" alt="...">
@@ -178,7 +238,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                   <div class="d-flex available">
                     <div class="flex-shrink-0">
                       <img src="images/pitch.png" class="img-fluid" alt="...">
@@ -193,7 +253,7 @@
             </div>
             <div class="tab-pane fade" id="pills-tennis" role="tabpanel" aria-labelledby="pills-tennis-tab">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                   <div class="d-flex available">
                     <div class="flex-shrink-0">
                       <img src="images/pitch.png" class="img-fluid" alt="...">
@@ -204,7 +264,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                   <div class="d-flex available">
                     <div class="flex-shrink-0">
                       <img src="images/pitch.png" class="img-fluid" alt="...">
@@ -221,7 +281,7 @@
           
 
           <!-- Facilities -->
-          <div class="pt-3">
+          <div class="pt-4">
             <h5 class="mb-0">Facilities</h5>
             <img src="images/bgSmall.png" class="bgImg" alt="">
             <div class="d-sm-flex d-block mb-3">
@@ -247,47 +307,80 @@
               </div>
             </div>
           </div>
+
           <!-- Reviews -->
-          <div class="reviews mb-3">
+          <div class="reviews mb-3 pt-4">
             <h5 class="mb-0">Reviews</h5>
             <img src="images/bgSmall.png" class="bgImg" alt="">
-            <div class="d-flex pb-3">
+            <div class="d-flex pb-3 pt-2">
               <button class="btn btnFilter">
                 <i class="fa fa-star stars"></i>
                 <span class="txtLarge fw-bold">4.5 / 5</span> 
               </button>
               <div class="ps-3">
-                <h6 class="mb-1 pt-1 d-none d-md-block">15 Players highly recommend this stadium</h6>
+                <h6 class="mb-1 pt-1 d-none d-md-block fw-bold">15 Players highly recommend this stadium</h6>
                 <p class="mb-0 textSmall">Based on 18 Reviews</p>
                 <p class="d-block d-md-none">
                   <a href="#">Show All Reviews ></a>
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div class="card mb-3">
               <div class="card-body">
                 <div class="d-flex">
                   <div class="flex-shrink-0">
                     <img src="images/person.png" class="imgCircle" alt="...">
                   </div>
                   <div class="flex-grow-1 ms-3 pt-1">
-                    <h5 class="fw-bold mb-1">Mohamed Khalifa <span class="float-end textSmall">2 days ago</span></h5>
+                    <h5 class="fw-bold mb-1">Mohamed Khalifa <span class="float-end fw-normal textSmall">2 days ago</span></h5>
                     <p class="textVsmall"><img src="images/star.png" alt=""> 5</p>
                   </div>
                 </div>
                 <p>The venue is surrounded by floodlights which makes this facility perfect all year around.</p>
               </div>
             </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img src="images/person.png" class="imgCircle" alt="...">
+                  </div>
+                  <div class="flex-grow-1 ms-3 pt-1">
+                    <h5 class="fw-bold mb-1">Mohamed Khalifa <span class="float-end fw-normal textSmall">2 days ago</span></h5>
+                    <p class="textVsmall"><img src="images/star.png" alt=""> 5</p>
+                  </div>
+                </div>
+                <p>The venue is surrounded by floodlights which makes this facility perfect all year around.</p>
+              </div>
+            </div>
+            <div class="row justify-content-center pt-4">
+              <div class="col-lg-6 col-md-8 col-10">
+                <button class="btn w-100 d-block mx-auto btnFind">Show All 18 reviews</button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-5">
-          <div class="d-block">
-            <button class="btn btnFilter ms-auto float-end" data-bs-toggle="modal" data-bs-target="#modalFilter">
-              <img src="images/share.png" alt=""> Share
-            </button>
-            <button class="btn btnFilter ms-auto float-end me-2" data-bs-toggle="modal" data-bs-target="#modalFilter">
-              <img src="images/heart.png" alt=""> save
-            </button>
+          <div class="d-block editPicker" dir="rtl">
+            <p class="text-center fw-bold mb-2">Book a Field on VISCA Stadium</p>
+            <p class="textSmall text-center pb-4">Select date and duration to show available slots</p>
+            <div id="datepicker" class="mb-3"></div>
+            <p class="pt-3 mb-0 fw-bold " dir="ltr">Match Duration</p>
+            <div class="row pb-4 btnSlot" dir="ltr">
+              <div class="col-4 mt-3">
+                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                <label class="btn btn-outline-primary w-100" for="success-outlined">60 mins</label>
+              </div>
+              <div class="col-4 mt-3">
+                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined2" autocomplete="off">
+                <label class="btn btn-outline-primary w-100" for="success-outlined2">90 mins</label>
+              </div>
+              <div class="col-4 mt-3">
+                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined3" autocomplete="off">
+                <label class="btn btn-outline-primary w-100" for="success-outlined3">120 mins</label>
+              </div>
+            </div>
+            <button class="btn w-100 d-block mx-auto btnFind">Show Available Slots</button>
           </div>
         </div>
       </div>
