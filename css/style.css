@@ -293,6 +293,19 @@ body{
     color: #41AD49;
     background-color: #edeeef;
 }
+.btnNext{
+    background-color: #eff0f1;
+    color: #41AD49;
+}
+.btnDisable{
+    background-color: #eff0f1;
+    color: #91a192;
+}
+.amountDistance{
+    border: none;
+    color: #41AD49;
+    font-weight: bold;
+}
 /* ============================= */
 .imgCircle{
     height: 48px;
@@ -332,6 +345,10 @@ body{
 .ui-widget.ui-widget-content{
     border:none;
 }
+.slideRange .ui-widget.ui-widget-content{
+    border: 1px solid #c5c5c5;
+}
+
 .ui-datepicker td span, .ui-datepicker td a{
     width: 30px;
 }

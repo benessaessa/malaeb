@@ -38,3 +38,19 @@ var swiper = new Swiper('.swiper-container', {
 $(function() {
   $("#datepicker").datepicker();
 });
+$( "#slider" ).slider({
+  values: [ 20 ]
+});
+$( function() {
+  $( "#slider-range" ).slider({
+  min: 0,
+  max: 100,
+  values: [20 ],
+  slide: function( event, ui ) {
+      $( "#amount" ).val( ui.values + "  KMs" );
+  }
+  });
+  $( "#amount" ).val( $( "#slider-range" ).slider("values", 0) + "  KMs" );
+  // $( "#amount" ).val( "kms" + $( "#slider-range" ).slider( "values", 0 ) +
+  // " - kms" );
+} );
