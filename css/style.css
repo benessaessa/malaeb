@@ -306,6 +306,55 @@ body{
     color: #41AD49;
     font-weight: bold;
 }
+.btnDay ,.btnTime{
+    min-width: 5rem;
+    border: 1px solid #EBEEF2;
+}
+.btnActive{
+    border: 2px solid #87BE44;
+}
+.btnActive p:last-child{
+    font-weight: bold;
+}
+.btnTimeActive{
+    border: 2px solid #87BE44;
+    color: #41AD49;
+}
+.btnTimeS{
+    border: 1px solid #EBEEF2;
+    min-width: 104px;
+}
+.btnTimeS p:last-child{
+    color: #b6bac0;
+}
+.btnTimeSActive{
+    border: 2px solid #87BE44;
+    color: #41AD49;
+}
+.btnTimeSActive p:last-child{
+    color: #41AD49;
+}
+.modalSlot .modal-body{
+    max-height: 26rem;
+    overflow: auto;
+}
+.dateSlot{
+    border: 1px solid #EBEEF2;
+    border-radius: 8px;
+}
+.dateSlot button{
+    font-size: 12px;
+    padding-top: 0.7rem;
+    color: #b6bac0;
+}
+.availableSlots{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;
+    margin-bottom: 1rem;
+    min-width: 15rem;
+}
+/* .overflowSlots{
+    max-height: 22rem;
+} */
 /* ============================= */
 .imgCircle{
     height: 48px;
