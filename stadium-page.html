@@ -308,6 +308,42 @@
             </div>
           </div>
 
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btnFind w-50" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Booking User
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header border-0" dir="rtl">
+                  <h5 class="modal-title w-100 text-center" id="exampleModalLabel">ENTER YOUR PHONE NUMBER</h5>
+                  <button type="button" class="bg-white border-0" data-bs-dismiss="modal">
+                    <img src="images/left.png" alt="">
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/register.png" class="img-fluid mx-auto d-block" alt="">
+                  <p class="text-center py-2">We will send you an SMS with <br>
+                    a one-time verfication code
+                  </p>
+                  <p class="mb-0 textVsmall">Mobile Number</p>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-white" id="basic-addon1">+973</span>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="form-group mb-2">
+                    <label for="otp" class="w-100">OTP <span class="float-end textVsmall text-muted">Resend again 00:59</span></label>
+                    <input id="otp" class="form-control" type="text" name="">
+                  </div>
+                  <button class="btn btnFind w-100 mb-2">Send code </button>
+                  <button class="btn btnFind w-100 mb-2"> Verify phone </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Reviews -->
           <div class="reviews mb-3 pt-4">
             <h5 class="mb-0">Reviews</h5>
@@ -386,7 +422,7 @@
               </div>
             </div>
             <p class="pt-3 mb-0 fw-bold d-md-block d-none" dir="ltr">Match Duration</p>
-            <div class="row pb-4 btnSlot d-md-block d-none" dir="ltr">
+            <div class="row pb-4 btnSlot d-md-flex d-none" dir="ltr">
               <div class="col-4 mt-3">
                 <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
                 <label class="btn btn-outline-success w-100" for="success-outlined">60 mins</label>
