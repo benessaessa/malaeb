@@ -445,6 +445,38 @@ body{
 .editPicker .ui-widget.ui-widget-content{
     margin: auto;
 }
+.minSlot{
+    background-color: #eef1f5;
+    border-radius: 15px;
+    padding: 0.5rem;
+    height: 48px;
+}
+.minSlot span{
+    background-color: white;
+    width: 67%;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 0.2rem 5px 0.2rem 5px;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    color: #41AD49;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.form-select:focus{
+    border: none;
+    box-shadow: none;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #41AD49;
+}
 /* ============================== */
 @media screen and (max-width:767px){
     .cardPlayground .card-body{
@@ -459,8 +491,8 @@ body{
         /* display: block; */
     }
     .jumbo{
-        margin-top: 4rem;
-        margin-bottom: 4rem
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     .textLg{
         font-size: 18px;

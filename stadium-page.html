@@ -40,13 +40,13 @@
           </ul>
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item me-lg-5">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item me-lg-5">
-              <a class="nav-link" href="">Stadiums</a>
+              <a class="nav-link" href="stadium-list.html">Stadiums</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="matches-list.html">Matches</a>
+              <a class="nav-link active" href="stadium-page.html">Matches</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -319,9 +319,10 @@
               </button>
               <div class="ps-3">
                 <h6 class="mb-1 pt-1 d-none d-md-block fw-bold">15 Players highly recommend this stadium</h6>
-                <p class="mb-0 textSmall">Based on 18 Reviews</p>
+                <p class="mb-0 textSmall d-none d-md-block">Based on 18 Reviews</p>
+                <p class="mb-0 textSmall pt-2 d-block d-md-none">Based on 18 Reviews</p>
                 <p class="d-block d-md-none">
-                  <a href="#">Show All Reviews ></a>
+                  <a href="#" class="textG text-decoration-none">Show All Reviews ></a>
                 </p>
               </div>
             </div>
@@ -361,12 +362,31 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-5">
-          <div class="d-block editPicker" dir="rtl">
-            <p class="text-center fw-bold mb-2">Book a Field on VISCA Stadium</p>
-            <p class="textSmall text-center pb-4">Select date and duration to show available slots</p>
-            <div id="datepicker" class="mb-3"></div>
-            <p class="pt-3 mb-0 fw-bold " dir="ltr">Match Duration</p>
-            <div class="row pb-4 btnSlot" dir="ltr">
+          <div class="d-block editPicker">
+            <div class="d-none d-md-block">
+              <p class="text-center fw-bold mb-2">Book a Field on VISCA Stadium</p>
+              <p class="textSmall text-center pb-4">Select date and duration to show available slots</p>
+              <div id="datepicker" class="mb-3" dir="rtl"></div>
+            </div>
+            <!-- Display only in mobile -->
+            <div class="d-block d-md-none mb-3">
+              <h5>Available Slots</h5>
+              <p>Select a date and duration to show available slots</p>
+              <div class="d-flex">
+                <div class="minSlot text-center w-100 me-2">
+                  <img src="images/Angle-left.png" alt="">
+                  <span class="textG">120 mins</span>
+                  <img src="images/Angle-right.png" alt="">
+                </div>
+                <div class="minSlot text-center w-100 me-2">
+                  <img src="images/Angle-left.png" alt="">
+                  <span class="textG">120 mins</span>
+                  <img src="images/Angle-right.png" alt="">
+                </div>
+              </div>
+            </div>
+            <p class="pt-3 mb-0 fw-bold d-md-block d-none" dir="ltr">Match Duration</p>
+            <div class="row pb-4 btnSlot d-md-block d-none" dir="ltr">
               <div class="col-4 mt-3">
                 <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
                 <label class="btn btn-outline-success w-100" for="success-outlined">60 mins</label>
@@ -380,13 +400,318 @@
                 <label class="btn btn-outline-success w-100" for="success-outlined3">120 mins</label>
               </div>
             </div>
-            <button class="btn w-100 d-block mx-auto btnFind">Show Available Slots</button>
+            <button class="btn w-100 d-block mx-auto btnFind" data-bs-toggle="modal" data-bs-target="#bookModal">Show Available Slots</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-
+  <!-- Book Modal -->
+  <div class="modal modalSlot fade" id="bookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-center w-100">Book a Field on VISCA Stadium</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body container">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="fw-bold mb-1">Select a Date</p>
+              <!-- Hide in mobile Display only in Desktop -->
+              <div class="dateSlot d-none d-lg-block">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <button class="btn border-0 px-0">
+                      <img src="images/Angle-left.png" alt="">
+                      Past day
+                    </button>
+                  </div>
+                  <div class="col-lg-6 p-0">
+                    <p class="textG mb-2 text-center pt-2">Fri 16 Oct 2020</p>
+                  </div>
+                  <div class="col-lg-3">
+                    <button class="btn border-0 px-0 float-end">
+                      Next day
+                      <img src="images/Angle-right.png" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Hide in desktop Display only in Mobile -->
+              <div class="d-flex overflow-auto d-lg-none">
+                <button class="btn btnDay me-2 mb-3 btnActive">
+                  <p class="mb-0 text-center">Today</p>
+                  <p class="mb-0">11 Oct</p>
+                </button>
+                <button class="btn btnDay me-2 mb-3">
+                  <p class="mb-0 text-center">Thu</p>
+                  <p class="mb-0">11 Oct</p>
+                </button>
+                <button class="btn btnDay me-2 mb-3">
+                  <p class="mb-0 text-center">Fri</p>
+                  <p class="mb-0">11 Oct</p>
+                </button>
+                <button class="btn btnDay me-2 mb-3">
+                  <p class="mb-0 text-center">Sat</p>
+                  <p class="mb-0">11 Oct</p>
+                </button>
+                <button class="btn btnDay me-2 mb-3">
+                  <p class="mb-0 text-center">Sun</p>
+                  <p class="mb-0">11 Oct</p>
+                </button>
+                <button class="btn btnDay me-2 mb-3">
+                  <p class="mb-0 text-center">Mon</p>
+                  <p class="mb-0">11 Oct</p>
+                </button>
+                <button class="btn btnDay me-2 mb-3">
+                  <p class="mb-0 text-center">Win</p>
+                  <p class="mb-0">11 Oct</p>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p class="fw-bold mb-1 d-none d-md-block"> Duration</p>
+              <p class="fw-bold mb-1 pt-2 d-md-none">Select a Duration</p>
+              <div class="d-flex">
+                <button class="btn btnTime btnTimeActive w-100 me-2"> 60 Mins </button>
+                <button class="btn btnTime w-100 me-2"> 90 Mins </button>
+                <button class="btn btnTime w-100 me-2"> 120 Mins </button>
+              </div>
+            </div>
+          </div>
+          <h6 class="fw-bold pt-3 pb-2">Available Slots</h6>
+          <!-- Hide in mobile Display only in Desktop -->
+          <div class="d-none overflow-auto overflowSlots d-md-flex">
+            <div class="me-3">
+              <div class="availableSlots p-2">
+                <span class="textG">⚽️ 5 v 5</span>
+                <span>Pitch No. (1) - Euro</span>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="mb-2 textSmall">Morning slots</p>
+                    <button class="btn btnTimeS btnTimeSActive w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">10:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">11:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">12:00 pm</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="mb-2 textSmall">Night Slot</p>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">03:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">04:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">05:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">06:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">07:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="me-3">
+              <div class="availableSlots p-2">
+                <span class="textG">⚽️ 6 v 6</span>
+                <span>Pitch No. (1) - Euro</span>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="mb-2 textSmall">Morning slots</p>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">10:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">11:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="mb-2 textSmall">Night Slot</p>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">03:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">04:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">05:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="me-3">
+              <div class="availableSlots p-2">
+                <span class="textG">⚽️ 7 v 7</span>
+                <span>Pitch No. (1) - Euro</span>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="mb-2 textSmall">Morning slots</p>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">10:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">11:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">12:00 pm</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="mb-2 textSmall">Night Slot</p>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">03:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">04:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">05:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">06:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">07:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="me-3">
+              <div class="availableSlots p-2">
+                <span class="textG">⚽️ 8 v 8</span>
+                <span>Pitch No. (1) - Euro</span>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="mb-2 textSmall">Morning slots</p>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">10:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="mb-2 textSmall">Night Slot</p>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">03:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                    <button class="btn btnTimeS w-100 px-3 mb-2">
+                      <p class="fw-bold mb-1">04:00 am</p>
+                      <p class="mb-0">2.5 BHD</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hide in desktop Display only in Mobile -->
+          <div class="availableSlots p-2 d-block w-100 d-md-none">
+            <span class="textG">⚽️ 5 v 5</span>
+            <span>Pitch No. (1) - Euro</span>
+          </div>
+          <!-- Hide in desktop Display only in Mobile -->
+          <div class="d-flex overflow-auto d-md-none pb-2">
+            <div class="card minCard">
+              <div class="card-header">
+                <p class="mb-0">Special Offer</p>
+              </div>
+              <div class="card-body">
+                <p class="mb-0 text-center pt-1">12:00 pm</p>
+              </div>
+            </div>
+            <button class="btn btnTimeS me-2 btnTimeSActive w-100 px-3 mb-2">
+              <p class="fw-bold mb-1">10:00 am</p>
+            </button>
+            <button class="btn btnTimeS me-2 w-100 px-3 mb-2">
+              <p class="fw-bold mb-1">11:00 am</p>
+            </button>
+            <button class="btn btnTimeS me-2 w-100 px-3 mb-2">
+              <p class="fw-bold mb-1">12:00 pm</p>
+            </button>
+          </div>
+          <!-- Hide in desktop Display only in Mobile -->
+          <div class="d-flex overflow-auto d-md-none pb-2 pt-2">
+            <button class="btn btnTimeS me-2 w-100 px-3 mb-2">
+              <p class="fw-bold mb-1">10:00 am</p>
+            </button>
+            <div class="card minCard">
+              <div class="card-header">
+                <p class="mb-0">Lowest Price</p>
+              </div>
+              <div class="card-body">
+                <p class="mb-0 text-center pt-1">12:00 pm</p>
+              </div>
+            </div>
+            <button class="btn btnTimeS me-2 w-100 px-3 mb-2">
+              <p class="fw-bold mb-1">11:00 am</p>
+            </button>
+            <button class="btn btnTimeS me-2 w-100 px-3 mb-2">
+              <p class="fw-bold mb-1">12:00 pm</p>
+            </button>
+          </div>
+        </div>
+        <!-- Hide in mobile Display only in Desktop -->
+        <div class="modal-footer d-none d-md-block">
+          <div class="row w-100 justify-content-center">
+            <div class="col-lg-8">
+              <button class="btn btnFind w-100">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Hide in desktop Display only in Mobile -->
+        <div class="modal-footer d-block d-md-none">
+          <div class="row w-100 justify-content-center">
+            <div class="col-6">
+              <p class="textVsmall">Select a slot first to show the price of it</p>
+            </div>
+            <div class="col-6">
+              <button class="btn btnFind w-100">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--  Start Organizing Your Games -->
   <div class="container">
     <div class="jumbo">
