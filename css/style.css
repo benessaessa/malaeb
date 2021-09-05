@@ -352,6 +352,10 @@ body{
     margin-bottom: 1rem;
     min-width: 15rem;
 }
+.form-check-input:checked{
+    background-color:#85C240;
+    border-color: #85C240;
+}
 .minCard{
     margin-right: 0.4rem;
     min-width: 8rem;
@@ -427,7 +431,7 @@ body{
     background-color: #41AD49;
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
-    background-color: blue;
+    background-color: #85C240;
     border: none;
 }
 .ui-datepicker .ui-datepicker-header{
