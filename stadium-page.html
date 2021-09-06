@@ -314,7 +314,7 @@
           </button>
 
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade modalPhone" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header border-0" dir="rtl">
@@ -333,12 +333,31 @@
                     <span class="input-group-text bg-white" id="basic-addon1">+973</span>
                     <input type="text" class="form-control" aria-describedby="basic-addon1">
                   </div>
+                  <button class="btn btnFind secondModal w-100 mb-2" data-bs-toggle="modal" data-bs-target="#sendCodeModal">Send code </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="sendCodeModal" tabindex="-1" aria-labelledby="sendCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header border-0" dir="rtl">
+                  <h5 class="modal-title w-100 text-center" id="exampleModalLabel">ENTER YOUR PHONE NUMBER</h5>
+                  <button type="button" class="bg-white border-0" data-bs-dismiss="modal">
+                    <img src="images/left.png" alt="">
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/register.png" class="img-fluid mx-auto d-block" alt="">
+                  <p class="text-center py-2">We will send you an SMS with <br>
+                    a one-time verfication code
+                  </p>
                   <div class="form-group mb-2">
                     <label for="otp" class="w-100">OTP <span class="float-end textVsmall text-muted">Resend again 00:59</span></label>
                     <input id="otp" class="form-control" type="text" name="">
                   </div>
-                  <button class="btn btnFind w-100 mb-2">Send code </button>
-                  <button class="btn btnFind w-100 mb-2"> Verify phone </button>
+                  <button class="btn btnFind w-100 mb-2"> Verify Number </button>
                 </div>
               </div>
             </div>
