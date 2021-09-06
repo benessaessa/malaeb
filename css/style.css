@@ -477,6 +477,13 @@ body{
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
     background-color: #41AD49;
 }
+.imgTag{
+    width: 63px;
+    height: 63px;
+}
+.bgPayment{
+    background-color: #f7f7f7;
+}
 /* ============================== */
 @media screen and (max-width:767px){
     .cardPlayground .card-body{

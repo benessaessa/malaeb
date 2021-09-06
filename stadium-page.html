@@ -91,7 +91,7 @@
           <div class="introStad">
             <div class="d-flex pt-4">
               <div class="flex-shrink-0">
-                <img src="images/tag.png" alt="...">
+                <img src="images/tag.png" class="imgTag" alt="...">
               </div>
               <div class="flex-grow-1 ms-3 pt-1">
                 <h5 class="fw-bold">VISCA Stadium</h5>
@@ -312,8 +312,11 @@
           <button type="button" class="btn btnFind w-50" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Booking User
           </button>
+          <button type="button" class="btn btnFind w-50 mt-3" data-bs-toggle="modal" data-bs-target="#paymentModal">
+            Payment
+          </button>
 
-          <!-- Modal -->
+          <!-- Modal verifiey Number-->
           <div class="modal fade modalPhone" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -338,7 +341,8 @@
               </div>
             </div>
           </div>
-          <!-- Modal -->
+
+          <!-- Modal Send OTP -->
           <div class="modal fade" id="sendCodeModal" tabindex="-1" aria-labelledby="sendCodeModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -358,6 +362,148 @@
                     <input id="otp" class="form-control" type="text" name="">
                   </div>
                   <button class="btn btnFind w-100 mb-2"> Verify Number </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Payment -->
+          <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header border-0" dir="rtl">
+                  <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Payment</h5>
+                  <button type="button" class="bg-white border-0" data-bs-dismiss="modal">
+                    <img src="images/left.png" alt="">
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="bgPayment p-3 mb-2">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img src="images/tag.png" class="img-fluid imgTag" alt="...">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h6 class="pt-1 fw-bold">VISCA Stadium</h6>
+                        <p>5 v 5 - Pitch No. (1) - Euro</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4 col-6">
+                        <p class="mb-0">Date</p>
+                        <h6 class="fw-bold">21 Oct 2020</h6>
+                      </div>
+                      <!-- Appear only in mobile -->
+                      <div class="col-lg-4 col-6 d-md-none d-block">
+                        <p class="mb-0">Match Time</p>
+                        <h6 class="fw-bold">08:00 PM</h6>
+                      </div>
+                      <!-- Appear only in desktop -->
+                      <div class="col-lg-4 d-none d-md-block">
+                        <p class="mb-0">Start Time</p>
+                        <h6 class="fw-bold">08:00 PM</h6>
+                      </div>
+                      <!-- Appear only in desktop -->
+                      <div class="col-lg-4 d-none d-md-block">
+                        <p class="mb-0">Duration</p>
+                        <h6 class="fw-bold">120 min</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <form action="#">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="cNumber">Card Number</label>
+                            <input id="cNumber" class="form-control" required type="text" name="">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group pt-2">
+                            <label for="cName">Card Holder Name</label>
+                            <input id="cName" class="form-control" required type="text" name="">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="form-group pt-2">
+                            <label for="expire">Expire Date</label>
+                            <input id="expire" class="form-control" required type="text" name="">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="form-group pt-2">
+                            <label for="cvv">CVV</label>
+                            <input id="cvv" class="form-control" required type="text" name="">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group pt-2 mb-3">
+                            <label for="email">Your Email Address (Optional)</label>
+                            <input id="email" class="form-control" type="email" name="">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <button class="btn btnFind w-100 my-2" data-bs-toggle="modal" data-bs-target="#paymentSuccessModal"> PAY 20 BHD </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Payment -->
+          <div class="modal fade" id="paymentSuccessModal" tabindex="-1" aria-labelledby="paymentSuccessModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header border-0" dir="rtl">
+                  <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Booking Confirmed</h5>
+                  <button type="button" class="bg-white border-0" data-bs-dismiss="modal">
+                    <img src="images/left.png" alt="">
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/paymentSuccess.png" class="d-block mx-auto img-fluid my-2" alt="">
+                  <h5 class="text-center fw-bold">Stadium booked successfully!</h5>
+                  <p class="text-center d-block d-md-none">Thanks for your booking.
+                    You will recieve a confirmation on mobile number and email, Enjoy your game!
+                  </p>
+                  <div class="bgPayment p-3 mb-2">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img src="images/tag.png" class="img-fluid imgTag" alt="...">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h6 class="pt-1 fw-bold">VISCA Stadium</h6>
+                        <p>5 v 5 - Pitch No. (1) - Euro</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4 col-6">
+                        <p class="mb-0">Date</p>
+                        <h6 class="fw-bold">21 Oct 2020</h6>
+                      </div>
+                      <!-- Appear only in mobile -->
+                      <div class="col-lg-4 col-6 d-md-none d-block">
+                        <p class="mb-0">Match Time</p>
+                        <h6 class="fw-bold">08:00 PM</h6>
+                      </div>
+                      <!-- Appear only in desktop -->
+                      <div class="col-lg-4 d-none d-md-block">
+                        <p class="mb-0">Start Time</p>
+                        <h6 class="fw-bold">08:00 PM</h6>
+                      </div>
+                      <!-- Appear only in desktop -->
+                      <div class="col-lg-4 d-none d-md-block">
+                        <p class="mb-0">Duration</p>
+                        <h6 class="fw-bold">120 min</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="d-none d-md-block">Paid Amount <span class="float-end fw-bold">BHD 50</span></p>
+                  <p class="textSmall text-center d-none d-md-block">Thanks for your booking. You will shortly recieve  a confirmation SMS to your phone. </p>
+                  <button class="btn btnFind w-100 my-2 d-md-block d-none"> Done </button>
+                  <button class="btn btnFind w-100 my-2 d-block d-md-none"> Back To Home </button>
                 </div>
               </div>
             </div>
@@ -461,6 +607,7 @@
       </div>
     </div>
   </div>
+
   <!-- Book Modal -->
   <div class="modal modalSlot fade" id="bookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
