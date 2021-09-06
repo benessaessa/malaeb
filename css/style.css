@@ -498,6 +498,23 @@ body{
     background-color: #41AD49;
     color: white;
 }
+.newSpecial{
+    border: 1px solid #EBEEF2;
+}
+.newSpecial p:first-child{
+    background-color: #F4AC45;
+    color: white;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.minSpecial{
+    min-width: 7rem;
+}
+.specialOffer:focus, .btnTimeS:focus ,.specialOfferLower:focus ,
+.btnDay:focus , .btnTime:focus ,.newSpecial:focus{
+    box-shadow: 0 0 0 0.1rem rgb(71 198 7 / 61%);
+}
 /* ============================== */
 @media screen and (max-width:767px){
     .cardPlayground .card-body{
