@@ -1,0 +1,85 @@
+@font-face{
+    src: url(../webfonts/Cairo-Regular.ttf);
+    font-family: cairo
+}
+body{
+    font-family: Cairo;
+    direction: rtl;
+}
+.navbar-nav{
+    padding-right: 1rem;
+}
+.float-end{
+    float: left !important;
+}
+.float-start{
+    float: right !important;
+}
+.me-2{
+    margin-left: 0.5rem !important;
+}
+.me-auto{
+    margin-left: auto !important;
+}
+.ms-auto{
+    margin-right: auto !important;
+}
+.swiper-button-next {
+    left: auto !important;
+    right: 10px !important;
+}
+.swiper-button-prev {
+    right: auto !important;
+    left: 10px !important;
+}
+.ms-3 {
+    margin-left: unset !important;
+    margin-right: 1rem!important;
+}
+.me-3 {
+    margin-left: 1rem!important;
+    margin-right: unset !important;
+}
+.minSlot{
+    direction: ltr;
+}
+.ps-3 {
+    padding-right: 1rem!important;
+}
+.jumbo .row{
+    justify-content: space-around;
+}
+.jumbo .row .ms-auto{
+    margin-left: auto!important;
+}
+.navFootball {
+    padding-right: 0px;
+}
+.dateSlot {
+    direction: ltr;
+}
+.dropdown-item{
+    text-align: right;
+}
+.modal-header .btn-close{
+    margin-left: unset;
+    margin-right: auto;
+}
+.navFootball .nav-item:first-child{
+    margin-left: 0.5rem;
+}
+.cardList .card-img-top{
+    border-radius: 0px 20px 20px 0px;
+}
+.border-start {
+    border-right: 1px solid #dee2e6!important;
+}
+.input-group .input-group-text ,.input-group .form-control{
+    border-radius: 0%;
+}
+@media (min-width: 992px){
+    .me-lg-5 {
+        margin-left: 3rem!important;
+        margin-right: unset !important;
+    }
+}
